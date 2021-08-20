@@ -2,12 +2,12 @@
 const a = [1, 2, 3, 4];
 const b = [5, 6, 7, 8];
 const mergedArray = [...a, ...b];
-console.log(mergedArray);
+console.log(mergedArray); // [1, 2, 3, 4, 5, 6, 7, 8]
 
 // Remove duplicates from an array
 const a = [1, 2, 3, 4, 1, 2, 3, 4];
 const uniqueArray = [...new Set(a)];
-console.log(uniqueArray);
+console.log(uniqueArray); // [1, 2, 3, 4]
 
 // Average of an array
 const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
@@ -31,6 +31,7 @@ const arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
 arr4.flat(Infinity);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+// Remove Empty Elements
 const arr5 = [1, 2, , 4, 5];
 arr5.flat();
 // [1, 2, 4, 5]
@@ -77,6 +78,7 @@ console.log(array1.fill(6));
 
 // Mainly to get last, second last item
 array[array.length-1] 
+
 //for the last item, you can call 
 array.at(-1)
 
