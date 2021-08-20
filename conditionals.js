@@ -1,16 +1,16 @@
 // Ternary
 // Long Hand
-const x = 20;
-let answer;
+const userType = 'SUPER_ADMIN';
+let userAccess;
 
-if (x > 10) {
-  answer = 'greater than 10';
+if (userType === 'SUPER_ADMIN') {
+  userAccess = 'all';
 } else {
-  answer = 'less than 10';
+  userAccess = 'restricted';
 }
 
 // Short Hand
-const answer = x > 10 ? 'greater than 10' : 'less than 10';
+const userAccess = userType === 'SUPER_ADMIN' ? 'all' : 'restricted';
 
 // Conditional
 // Long Hand
@@ -46,6 +46,10 @@ if (isLoggedin) {
 // Shorthand
 isLoggedin && goToHomepage();
 
+const dom = isLoggedin ? '<span>Hello</span>' : null;
+
+const dom = isLoggedin && '<span>Hello</span>';
+
 // Optional Chaining
 const adventurer = {
   name: 'Alice',
@@ -55,4 +59,5 @@ const adventurer = {
 };
 
 const dogName = adventurer.dog?.name || '';
+
 console.log(dogName);
