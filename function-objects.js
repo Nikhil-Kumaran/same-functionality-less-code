@@ -8,14 +8,17 @@ Object.freeze(obj);
 obj.prop = 33;
 // Throws an error in strict mode
 
+console.log(obj.prop);
+// expected output: 42
+
+const newObj = {}; // new Object();
+
 // Object Create
 const dictionary = Object.create(null);
 // Lightweight key value pair etc
 
-console.log(obj.prop);
-// expected output: 42
-
-// Create new reference of an Object
+// Create a new reference of an Object
+// Single Level Objects
 const newObject = { ...oldObject };
 
 // Defining Properties on Objects
@@ -58,7 +61,7 @@ function volume(l, w, h) {
 }
 
 // Short Hand
-volume = (l, w = 3, h = 4) => l * w * h;
+volume = (l = 1, w = 3, h = 4) => l * w * h;
 
 volume(2); //output: 24
 

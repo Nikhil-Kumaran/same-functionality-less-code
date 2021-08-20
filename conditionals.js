@@ -18,6 +18,9 @@ if (variable1 !== null || variable1 !== undefined || variable1 !== '') {
   let variable2 = variable1;
 }
 
+// Short Hand
+const variable2 = variable1 || 'new';
+
 // Evaluation
 // Long Hand
 let dbHost;
@@ -29,9 +32,6 @@ if (process.env.DB_HOST) {
 
 // Short Hand
 const dbHost = process.env.DB_HOST || 'localhost';
-
-// Short Hand
-const variable2 = variable1 || 'new';
 
 // Specifically for null and undefined we can use
 // nullish coalescing operator
@@ -54,5 +54,5 @@ const adventurer = {
   },
 };
 
-const dogName = adventurer.dog?.name;
+const dogName = adventurer.dog?.name || '';
 console.log(dogName);
