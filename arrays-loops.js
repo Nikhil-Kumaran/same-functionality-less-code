@@ -41,7 +41,7 @@
 // if (value === 1 || value === 'one' || value === 2 || value === 'two') {
 //     // Execute some code
 //   }
-  
+
 // Shorthand 1
 // if ([1, 'one', 2, 'two'].indexOf(value) >= 0) {
 // // Execute some code
@@ -60,7 +60,6 @@
 // console.log(array1.findIndex(isLargeNumber));
 // expected output: 3
 
-
 // Fill Method
 // const array1 = [1, 2, 3, 4];
 
@@ -75,44 +74,39 @@
 // console.log(array1.fill(6));
 // expected output: [6, 6, 6, 6]
 
-
 // Mainly to get last, second last item
-// array[array.length-1] 
+// array[array.length-1]
 
-//for the last item, you can call 
+//for the last item, you can call
 // array.at(-1)
-
-
 
 // For Loop
 // Long Hand
-const fruits = ['mango', 'peach', 'banana'];
-for (let i = 0; i < fruits.length; i++)
+// const fruits = ['mango', 'peach', 'banana'];
+// for (let i = 0; i < fruits.length; i++)
 
 // Short Hand
-for (let fruit of fruits)
+// for (let fruit of fruits)
 // Just Index
-for (let index in fruits)
+// for (let index in fruits)
 
-const obj = {continent: 'Africa', country: 'Kenya', city: 'Nairobi'}
+// const obj = {continent: 'Africa', country: 'Kenya', city: 'Nairobi'}
 
-for (let key in obj)
-  console.log(key) // output: continent, country, city
+// for (let key in obj)
+//   console.log(key) // output: continent, country, city
 
-
-let friends = [13, 15, 16, 18] //ages of group of friends
+// let friends = [13, 15, 16, 18] //ages of group of friends
 
 // checking if at least one of them is 18 or above
-friends.some(val => val >= 18)
+// friends.some(val => val >= 18)
 
+// let giftPrices = [300, 350, 399, 400]
+// let budgetPerGift = 450
 
-let giftPrices = [300, 350, 399, 400]
-let budgetPerGift = 450
+// let checkBudget = price => price <= budgetPerGift
 
-let checkBudget = price => price <= budgetPerGift
+// giftPrices.every(checkBudget) // true
 
-giftPrices.every(checkBudget) // true
+// budgetPerGift = 300
 
-budgetPerGift = 300
-
-giftPrices.every(checkBudget) // false
+// giftPrices.every(checkBudget) // false
