@@ -1,2 +1,5 @@
-import './examples/eg1.js';
-import './examples/eg2.js';
+import "./conditionals";
+import "./variables";
+import "./arrays-loops";
+import "./functionality";
+import "./function-objects";

@@ -1,86 +1,86 @@
 // Merge two arrays
-const a = [1, 2, 3, 4];
-const b = [5, 6, 7, 8];
-const mergedArray = [...a, ...b];
-console.log(mergedArray); // [1, 2, 3, 4, 5, 6, 7, 8]
+// const a = [1, 2, 3, 4];
+// const b = [5, 6, 7, 8];
+// const mergedArray = [...a, ...b];
+// console.log(mergedArray); // [1, 2, 3, 4, 5, 6, 7, 8]
 
 // Remove duplicates from an array
-const a = [1, 2, 3, 4, 1, 2, 3, 4];
-const uniqueArray = [...new Set(a)];
-console.log(uniqueArray); // [1, 2, 3, 4]
+// const a = [1, 2, 3, 4, 1, 2, 3, 4];
+// const uniqueArray = [...new Set(a)];
+// console.log(uniqueArray); // [1, 2, 3, 4]
 
 // Average of an array
-const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
-const arrayAverage = average([21, 56, 23, 122, 67]);
-console.log(arrayAverage);
+// const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
+// const arrayAverage = average([21, 56, 23, 122, 67]);
+// console.log(arrayAverage);
 
 // Array Flat
-const arr1 = [1, 2, [3, 4]];
-arr1.flat();
+// const arr1 = [1, 2, [3, 4]];
+// arr1.flat();
 // [1, 2, 3, 4]
 
-const arr2 = [1, 2, [3, 4, [5, 6]]];
-arr2.flat();
+// const arr2 = [1, 2, [3, 4, [5, 6]]];
+// arr2.flat();
 // [1, 2, 3, 4, [5, 6]]
 
-const arr3 = [1, 2, [3, 4, [5, 6]]];
-arr3.flat(2);
+// const arr3 = [1, 2, [3, 4, [5, 6]]];
+// arr3.flat(2);
 // [1, 2, 3, 4, 5, 6]
 
-const arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
-arr4.flat(Infinity);
+// const arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+// arr4.flat(Infinity);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // Remove Empty Elements
-const arr5 = [1, 2, , 4, 5];
-arr5.flat();
+// const arr5 = [1, 2, , 4, 5];
+// arr5.flat();
 // [1, 2, 4, 5]
 
 //Checking multiple values
 //Longhand
-if (value === 1 || value === 'one' || value === 2 || value === 'two') {
-    // Execute some code
-  }
+// if (value === 1 || value === 'one' || value === 2 || value === 'two') {
+//     // Execute some code
+//   }
   
 // Shorthand 1
-if ([1, 'one', 2, 'two'].indexOf(value) >= 0) {
-// Execute some code
-}
+// if ([1, 'one', 2, 'two'].indexOf(value) >= 0) {
+// // Execute some code
+// }
 
 // Shorthand 2
-if ([1, 'one', 2, 'two'].includes(value)) {
-// Execute some code
-}
+// if ([1, 'one', 2, 'two'].includes(value)) {
+// // Execute some code
+// }
 
 // Find Index Method
-const array1 = [5, 12, 8, 130, 44];
+// const array1 = [5, 12, 8, 130, 44];
 
-const isLargeNumber = (element) => element > 13;
+// const isLargeNumber = (element) => element > 13;
 
-console.log(array1.findIndex(isLargeNumber));
+// console.log(array1.findIndex(isLargeNumber));
 // expected output: 3
 
 
 // Fill Method
-const array1 = [1, 2, 3, 4];
+// const array1 = [1, 2, 3, 4];
 
 // fill with 0 from position 2 until position 4
-console.log(array1.fill(0, 2, 4));
+// console.log(array1.fill(0, 2, 4));
 // expected output: [1, 2, 0, 0]
 
 // fill with 5 from position 1
-console.log(array1.fill(5, 1));
+// console.log(array1.fill(5, 1));
 // expected output: [1, 5, 5, 5]
 
-console.log(array1.fill(6));
+// console.log(array1.fill(6));
 // expected output: [6, 6, 6, 6]
 
 
 // Mainly to get last, second last item
-array[array.length-1] 
+// array[array.length-1] 
 
 //for the last item, you can call 
-array.at(-1)
+// array.at(-1)
 
 
 
