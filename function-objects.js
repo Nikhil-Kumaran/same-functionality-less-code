@@ -12,6 +12,7 @@ console.log(obj.prop);
 // expected output: 42
 
 const newObj = {}; // new Object();
+const newObj = new Object();
 
 // Object Create
 const dictionary = Object.create(null);
@@ -28,7 +29,7 @@ const x = 1920,
 const obj = { x: x, y: y };
 
 // Short Hand
-const obj = { x, y };
+const obj = { x, y, z };
 
 // Long Hand
 // Normal Functions
@@ -55,13 +56,14 @@ list.forEach((item) => console.log(item));
 // Default Values
 // Long Hand
 function volume(l, w, h) {
+  if (l === undefined) w = 2;
   if (w === undefined) w = 3;
   if (h === undefined) h = 4;
   return l * w * h;
 }
 
 // Short Hand
-volume = (l = 1, w = 3, h = 4) => l * w * h;
+volume = (l = 2, w = 3, h = 4) => l * w * h;
 
 volume(2); //output: 24
 
